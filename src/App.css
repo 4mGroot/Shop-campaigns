@@ -1,0 +1,45 @@
+.app-container {
+    /* แทนที่ style={{ display: "flex", gap: "20px", padding: "20px" }} */
+    display: flex;
+    gap: 30px; /* เพิ่มระยะห่างให้ดูโปร่งขึ้น */
+    padding: 30px;
+    max-width: 1300px; /* จำกัดความกว้างรวมของหน้าจอ */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลางหน้าจอ */
+    font-family: Arial, sans-serif;
+    background-color: #f8f8fa; /* พื้นหลังสีอ่อน */
+    min-height: 100vh; /* เต็มความสูงจอ */
+}
+
+.product-section {
+    /* แทนที่ style={{ flex: 1, borderRight: "1px solid #ccc", paddingRight: "20px" }} */
+    flex: 1; /* ใช้พื้นที่ที่เหลือ */
+    padding-right: 30px;
+    /* เส้นแบ่งที่ดูดีขึ้น */
+    border-right: 1px solid #e2e2e2; 
+}
+
+.product-section h1 {
+    color: #4a5568; /* สีหัวข้อที่เข้มขึ้น */
+    font-size: 1.8em;
+    border-bottom: 3px solid #667eea; /* เส้นใต้สีฟ้าม่วง */
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.sidebar-section {
+    /* แทนที่ style={{ width: "360px" }} */
+    width: 400px; /* เพิ่มความกว้างเล็กน้อย */
+    display: flex; /* จัดเรียง Cart และ Campaign เป็นคอลัมน์ */
+    flex-direction: column;
+    gap: 30px; /* ระยะห่างระหว่าง Cart และ Campaign */
+}
+
+/* หากต้องการให้ Cart และ Campaign ดูเด่นขึ้น */
+.sidebar-section > div {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); /* เพิ่มเงา */
+    border: 1px solid #f0f0f0;
+}
