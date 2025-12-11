@@ -1,2 +1,0 @@
-# Shop-campaigns
-Nontawat Noituptim
